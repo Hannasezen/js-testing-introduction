@@ -25,7 +25,7 @@ const validateInput = (text, notEmpty, isNumber) => {
   return true;
 };
 
-exports.checkAndGenerate = (name, age) => {
+const checkAndGenerate = (name, age) => {
   if (
     !validateInput(name, true, false) ||
     !validateInput(age, false, true)
@@ -37,3 +37,4 @@ exports.checkAndGenerate = (name, age) => {
 
 exports.generateText = generateText;
 exports.validateInput = validateInput;
+exports.checkAndGenerate = checkAndGenerate;
